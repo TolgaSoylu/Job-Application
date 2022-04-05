@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+@import 'base/common';
+@import 'base/reset';
+@import 'base/typography';
+
+@import 'components/input';
+@import 'components/applicantReview';
+@import 'components/applicantList';
+@import 'components/employeeSkills';
+@import 'components/jobMatchLeaderboard';
+@import 'components/buttons';
+@import 'components/profileSummary';
+@import 'components/radio';
+@import 'components/checkbox';
+@import 'components/dropdown';
+
+@import 'layout/header';
+@import 'layout/footer';
+@import 'layout/leftMenu';

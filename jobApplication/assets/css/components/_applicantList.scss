@@ -1,0 +1,125 @@
+.applicantListScope{
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 5px 20px rgba(146, 146, 157, 0.05);
+    border-radius: 10px;
+    margin-bottom: 25px;    
+    .applicantListTitle{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #171725;
+        padding-bottom: 15px;
+    }
+    table thead tr{
+        border-radius: 10px;
+        background: #FAFAFB;
+        color: #92929D;
+        font-size: 11px;
+        font-weight: 600;
+        line-height: 16px;
+    }
+    table thead tr th:first-child{
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+    }
+    table thead tr th:last-child{
+        border-bottom-right-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+    table > :not(:first-child) {
+        border-top: 0;
+    }
+    table > * {
+        border: transparent;
+    }
+    table tbody {
+        color: #44444F !important;
+        font-size: 14px !important;
+        font-weight: 400 !important;
+        line-height: 24px !important;
+    }
+    .applicantListPhoto{
+        width: 48px;
+        height: 48px;
+        background-color: #FC5A5A;
+        border-radius: 10px;
+    }
+    .blueText{
+        color: #0062FF !important;
+    }
+    .applicantListdesktopCard{
+        display: block;
+    }
+    .applicantListMobileCard{
+        .applicantListMobileCardItem{
+            position: relative;
+            border-radius: 10px;
+            border: 1px solid #F1F1F5;
+            box-sizing: border-box;
+            display: none;
+            margin-bottom: 10px;
+            .applicantListMobileCardTop{
+                position: relative;
+                padding: 10px 15px;
+                .applicantListPhoto{
+                    display: inline-block;
+                    width: 36px;
+                    height: 36px;
+                    background-color: #FC5A5A;
+                    border-radius: 7.5px;
+                    margin-right: 10px;
+                }
+                .applicantListMobileCardTopInfo{
+                    display: inline-block;
+                    .name{
+                        display: block;
+                        font-size: 14px;
+                        font-weight: 500;
+                        color: #44444F;
+                    }
+                    .date{
+                        display: block;
+                        font-size: 12px;
+                        font-weight: 400;
+                        color: #92929D;
+                    }
+                }
+                .applicantListMobileCardTopRight{
+                    padding-top: 10px;
+                    float: right;
+                    span{
+                        font-size: 14px;
+                        font-weight: 400;
+                        color: #0062FF;
+                    }
+                }
+            }
+            .applicantListMobileCardBottom{
+                position: relative;
+                background-color: #FAFAFB;
+                padding: 8px 15px;
+                text-align: center;
+                .applicantListMobileCardBottomInfos{
+                    display: inline-block;
+                    font-size: 12px;
+                    color: #696974;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    
+}
+
+@media only screen and (max-width: $view-tablet) {
+    .applicantListScope{
+        margin-top: 25px;
+    }
+    .applicantListdesktopCard{
+        display: none !important;
+    }
+    .applicantListMobileCardItem{
+        display: block !important;
+    }
+}

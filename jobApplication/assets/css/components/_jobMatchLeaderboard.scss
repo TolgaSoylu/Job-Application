@@ -1,0 +1,60 @@
+.jobLeaderboardScope{
+    padding: 20px;
+    background: #FFF;
+    box-shadow: 0px 5px 20px rgba(146, 146, 157, 0.05);
+    border-radius: 10px;    
+    .jobLeaderboardTitle{
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 24px;
+        color: #171725;
+        padding-bottom: 15px;
+    }
+    .jobLeaderboardPhoto{
+        display: inline-block;
+        width: 36px;
+        height: 36px;
+        background-color: #FC5A5A;
+        border-radius: 10px;
+    }
+    .row{
+        margin-bottom: 25px;
+    }
+    .jobLeaderboardRow{
+        padding-bottom: 5px;
+        .jobLeaderboardName{
+            color: #44444F;
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 16px;
+            padding-right: 5px;
+        }
+        .jobLeaderboardJob{
+            color: #0062FF;
+            font-size: 12px;
+            font-weight: 400;
+            line-height: 14px;
+            padding-right: 5px;
+        }
+        .jobLeaderboardPoint{
+            color: #92929D;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 16px;
+        }
+        .progress{
+            height: 0.4rem;
+        }
+        .progress-bar{
+            background-color: #50B5FF;
+        }
+        
+    }
+    .badge{
+        font-weight: 400 !important;
+    }
+    .col-xl-1{
+        width: 10%;
+    }
+
+}

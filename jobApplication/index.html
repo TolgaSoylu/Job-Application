@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/main.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/plugin/bootstrap/bootstrap.min.css">
+</head>
+<body class="bgColor">
+    <div class="container-fluid bg-white">
+        <div class="row p-3 border-bottom desktopHeader">
+            <div class="col-xl-2 col-lg-2 col-md-12 my-auto">
+                <img src="assets/images/logo.png" width="111" height="auto">
+            </div>
+            <div class="col-xl-7 col-lg-7 col-md-12 text-center my-auto">
+                <a class="navMenu text-decoration-none text-black px-2" href="#">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M2.99967 6.66667H3.66634C5.1391 6.66667 6.33301 7.86057 6.33301 9.33333V10.6667C6.33301 12.1394 5.1391 13.3333 3.66634 13.3333H2.99967C1.52692 13.3333 0.333008 12.1394 0.333008 10.6667V9.33333C0.333008 7.86057 1.52692 6.66667 2.99967 6.66667ZM2.99967 8C2.26329 8 1.66634 8.59695 1.66634 9.33333V10.6667C1.66634 11.403 2.26329 12 2.99967 12H3.66634C4.40272 12 4.99967 11.403 4.99967 10.6667V9.33333C4.99967 8.59695 4.40272 8 3.66634 8H2.99967ZM2.66634 0C3.95501 0 4.99967 1.04467 4.99967 2.33333V3C4.99967 4.28866 3.95501 5.33333 2.66634 5.33333C1.37768 5.33333 0.333008 4.28866 0.333008 3V2.33333C0.333008 1.04467 1.37768 0 2.66634 0ZM2.66634 1.33333C2.11406 1.33333 1.66634 1.78105 1.66634 2.33333V3C1.66634 3.55228 2.11406 4 2.66634 4C3.21863 4 3.66634 3.55228 3.66634 3V2.33333C3.66634 1.78105 3.21863 1.33333 2.66634 1.33333ZM10.333 6H10.9997C12.4724 6 13.6663 7.19391 13.6663 8.66667V10.6667C13.6663 12.1394 12.4724 13.3333 10.9997 13.3333H10.333C8.86025 13.3333 7.66634 12.1394 7.66634 10.6667V8.66667C7.66634 7.19391 8.86025 6 10.333 6ZM10.333 7.33333C9.59663 7.33333 8.99967 7.93029 8.99967 8.66667V10.6667C8.99967 11.403 9.59663 12 10.333 12H10.9997C11.7361 12 12.333 11.403 12.333 10.6667V8.66667C12.333 7.93029 11.7361 7.33333 10.9997 7.33333H10.333ZM8.66634 0H11.333C12.6217 0 13.6663 1.04467 13.6663 2.33333C13.6663 3.622 12.6217 4.66667 11.333 4.66667H8.66634C7.37768 4.66667 6.33301 3.622 6.33301 2.33333C6.33301 1.04467 7.37768 0 8.66634 0ZM8.66634 1.33333C8.11406 1.33333 7.66634 1.78105 7.66634 2.33333C7.66634 2.88562 8.11406 3.33333 8.66634 3.33333H11.333C11.8853 3.33333 12.333 2.88562 12.333 2.33333C12.333 1.78105 11.8853 1.33333 11.333 1.33333H8.66634Z" fill="#92929D"/>
+                    </svg>
+                    Dashboard
+                </a>
+                <a class="navMenu text-decoration-none text-black px-3" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3.12161 11.7581C0.736807 9.37327 0.736807 5.50675 3.12161 3.12194C5.50641 0.737143 9.37294 0.737143 11.7577 3.12194C13.9376 5.30178 14.1249 8.71959 12.3198 11.1122L14.7292 13.5217C15.3578 14.1502 14.415 15.093 13.7864 14.4645L11.4058 12.0838C9.00654 14.1374 5.39237 14.0288 3.12161 11.7581ZM10.8149 4.06475C8.95083 2.20065 5.92852 2.20065 4.06442 4.06475C2.20032 5.92886 2.20032 8.95116 4.06442 10.8153C5.92852 12.6794 8.95083 12.6794 10.8149 10.8153C12.679 8.95116 12.679 5.92886 10.8149 4.06475Z" fill="#92929D"/>
+                    </svg>    
+                    Job Search
+                </a>
+                <a class="navMenu text-decoration-none text-black px-3" href="#">
+                    <svg width="14" height="15" viewBox="0 0 14 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M4.66305 3.36668C4.6296 3.70357 4.34536 3.96668 3.99967 3.96668C3.65398 3.96668 3.36975 3.70357 3.3363 3.36668H1.66634V4.43334H12.333V3.36668H11.263C11.2296 3.70357 10.9454 3.96668 10.5997 3.96668C10.254 3.96668 9.96975 3.70357 9.9363 3.36668H4.66305ZM4.66305 3.36668H9.9363H4.66305ZM3.33301 2.03334V1.50001C3.33301 1.13182 3.63148 0.833344 3.99967 0.833344C4.36786 0.833344 4.66634 1.13182 4.66634 1.50001V2.03334H9.93301V1.50001C9.93301 1.13182 10.2315 0.833344 10.5997 0.833344C10.9679 0.833344 11.2663 1.13182 11.2663 1.50001V2.03334H12.3997C13.0992 2.03334 13.6663 2.60045 13.6663 3.30001V12.1667C13.6663 13.2712 12.7709 14.1667 11.6663 14.1667H2.33301C1.22844 14.1667 0.333008 13.2712 0.333008 12.1667V3.30001C0.333008 2.60045 0.900114 2.03334 1.59967 2.03334H3.33301ZM12.333 5.76668H1.66634V12.1667C1.66634 12.5349 1.96482 12.8333 2.33301 12.8333H11.6663C12.0345 12.8333 12.333 12.5349 12.333 12.1667V5.76668ZM3.39967 8.16668C3.03148 8.16668 2.73301 7.8682 2.73301 7.50001C2.73301 7.13182 3.03148 6.83334 3.39967 6.83334H5.79967C6.16786 6.83334 6.46634 7.13182 6.46634 7.50001C6.46634 7.8682 6.16786 8.16668 5.79967 8.16668H3.39967ZM3.39967 10.5667C3.03148 10.5667 2.73301 10.2682 2.73301 9.90001C2.73301 9.53182 3.03148 9.23334 3.39967 9.23334H8.19967C8.56786 9.23334 8.86634 9.53182 8.86634 9.90001C8.86634 10.2682 8.56786 10.5667 8.19967 10.5667H3.39967Z" fill="#92929D"/>
+                    </svg>
+                    Schedule
+                </a>
+                <a class="navMenu text-decoration-none text-black px-3" href="#">
+                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.99935 0.666656C12.0494 0.666656 15.3327 3.9499 15.3327 7.99999C15.3327 12.0501 12.0494 15.3333 7.99935 15.3333C3.94926 15.3333 0.666016 12.0501 0.666016 7.99999C0.666016 3.9499 3.94926 0.666656 7.99935 0.666656ZM7.99935 1.99999C4.68564 1.99999 1.99935 4.68628 1.99935 7.99999C1.99935 11.3137 4.68564 14 7.99935 14C11.3131 14 13.9993 11.3137 13.9993 7.99999C13.9993 4.68628 11.3131 1.99999 7.99935 1.99999ZM7.99935 3.33332C8.36754 3.33332 8.66602 3.6318 8.66602 3.99999V7.67393L11.4086 9.80709C11.6993 10.0331 11.7516 10.452 11.5256 10.7426C11.2995 11.0332 10.8807 11.0856 10.5901 10.8596L7.59005 8.52623C7.42766 8.39992 7.33268 8.20572 7.33268 7.99999V3.99999C7.33268 3.6318 7.63116 3.33332 7.99935 3.33332Z" fill="#92929D"/>
+                    </svg>
+                    History
+                </a>
+                <a class="navMenu text-decoration-none text-black px-2" href="#">
+                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.17127 7.98278L12.4761 1.25393C12.7041 0.964794 13.1233 0.915191 13.4124 1.14314C13.7016 1.37109 13.7512 1.79028 13.5232 2.07942L7.74177 9.41275C7.49036 9.73164 7.01468 9.75361 6.73496 9.45924L3.84973 6.42293C3.59611 6.15602 3.60688 5.73405 3.87378 5.48042C4.14069 5.2268 4.56266 5.23757 4.81628 5.50447L7.17127 7.98278ZM12.333 6.40001C12.333 6.03182 12.6315 5.73334 12.9997 5.73334C13.3679 5.73334 13.6663 6.03182 13.6663 6.40001V11.2C13.6663 12.5623 12.562 13.6667 11.1997 13.6667H2.79967C1.43737 13.6667 0.333008 12.5623 0.333008 11.2V2.80001C0.333008 1.43771 1.43737 0.333344 2.79967 0.333344H9.93301C10.3012 0.333344 10.5997 0.63182 10.5997 1.00001C10.5997 1.3682 10.3012 1.66668 9.93301 1.66668H2.79967C2.17375 1.66668 1.66634 2.17409 1.66634 2.80001V11.2C1.66634 11.8259 2.17375 12.3333 2.79967 12.3333H11.1997C11.8256 12.3333 12.333 11.8259 12.333 11.2V6.40001Z" fill="#92929D"/>
+                    </svg>
+                    Events
+                </a>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-12 my-auto">
+                <div class="accountBlock float-end">
+                    <img src="assets/images/icons/Notification.png" width="18" height="auto">
+                    <span class="accountName cursor-pointer">
+                        <img src="assets/images/icons/Profile.svg" class="ms-3 me-1" width="32" height="auto">
+                        Austin Robertson
+                        <img src="assets/images/icons/dropdown.png" width="11" height="auto">
+                    </span>
+                </div>
+                
+                
+            </div>
+        </div>
+        <div class="row p-3 border-bottom mobileHeader">
+            <div class="col-auto pe-1 my-auto">
+                <div class="hamburgerMenu mb-1"></div>
+                <div class="hamburgerMenu"></div>
+            </div>
+            <div class="col-auto my-auto pe-1">
+                <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M3.12161 11.7581C0.736807 9.37327 0.736807 5.50675 3.12161 3.12194C5.50641 0.737143 9.37294 0.737143 11.7577 3.12194C13.9376 5.30178 14.1249 8.71959 12.3198 11.1122L14.7292 13.5217C15.3578 14.1502 14.415 15.093 13.7864 14.4645L11.4058 12.0838C9.00654 14.1374 5.39237 14.0288 3.12161 11.7581ZM10.8149 4.06475C8.95083 2.20065 5.92852 2.20065 4.06442 4.06475C2.20032 5.92886 2.20032 8.95116 4.06442 10.8153C5.92852 12.6794 8.95083 12.6794 10.8149 10.8153C12.679 8.95116 12.679 5.92886 10.8149 4.06475Z" fill="#00ABFF"/>
+                </svg>
+            </div>
+            <div class="col-auto my-auto">
+                <h1 class="mobileMainTitle">Applicants</h1>
+            </div>
+            <div class="col-auto my-auto ms-auto">
+                <div class="accountBlock float-end">
+                    <img src="assets/images/icons/Notification.png" width="18" height="auto">
+                    <span class="accountName cursor-pointer">
+                        <img src="assets/images/icons/Profile.svg" class="ms-3 me-1" width="32" height="auto">
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bgColor py-3">
+        <div class="row py-3 bg-white mobileMenuTab">
+            <div class="col-6">
+                <a href="#" class="active">Applicant Review</a>
+            </div>
+            <div class="col-6">
+                <a href="#">Job Details</a>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bgColor">
+        <div class="container pt-2">
+            <div class="row">
+                <div class="col-xl-3">
+                    <h1 class="applicantReviewTitle">Applicant Review</h1>
+                    <div class="applicantReviewScope">
+                        <div class="applicantReviewItem d-flex border-bottom">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2 selected"></div>
+                                <div class="applicantReviewCancel"></div>
+                            </div>
+                        </div>
+                        <div class="applicantReviewItem d-flex border-bottom">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2"></div>
+                                <div class="applicantReviewCancel selected"></div>
+                            </div>
+                        </div>
+                        <div class="applicantReviewItem d-flex border-bottom">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2 selected"></div>
+                                <div class="applicantReviewCancel"></div>
+                            </div>
+                        </div>
+                        <div class="applicantReviewItem d-flex border-bottom">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2"></div>
+                                <div class="applicantReviewCancel selected"></div>
+                            </div>
+                        </div>
+                        <div class="applicantReviewItem d-flex border-bottom">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2 selected"></div>
+                                <div class="applicantReviewCancel"></div>
+                            </div>
+                        </div>
+                        <div class="applicantReviewItem d-flex">
+                            <div class="applicantReviewPhoto"></div>
+                            <div class="applicantReviewInfo d-flex flex-column">
+                                <span class="applicantReviewName">Brett Drake</span>
+                                <span class="applicantReviewTitle">
+                                    UI Designer 
+                                    <span class="applicantReviewDate">1 Yrs Exp</span>
+                                </span>
+                            </div>
+                            <div class="applicantReviewButton d-flex align-items-center ms-auto">
+                                <div class="applicantReviewCheck me-2"></div>
+                                <div class="applicantReviewCancel selected"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-6">
+                    <div class="applicantListScope">
+                        <h2 class="applicantListTitle">Applicant List Comparison</h2>
+                        <div class="table-responsive applicantListdesktopCard">
+                            <table class="table">
+                                <thead>
+                                  <tr>
+                                    <th scope="col">PIC</th>
+                                    <th scope="col">NAME</th>
+                                    <th scope="col">PORTFOLIO</th>
+                                    <th scope="col">EXP</th>
+                                    <th scope="col">SALARY</th>
+                                    <th scope="col">WORK START</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <th scope="row">
+                                        <div class="applicantListPhoto"></div>
+                                    </th>
+                                    <td class="align-middle">Brett Drake</td>
+                                    <td class="align-middle blueText">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.605 4.65184V6.41666H9.31773C9.28125 5.72365 9.18092 5.0747 9.03302 4.49396C8.5745 4.57438 8.09583 4.62771 7.605 4.65184ZM6.43834 4.65393C5.93209 4.63087 5.43852 4.57678 4.96633 4.49396C4.81843 5.0747 4.7181 5.72365 4.68161 6.41666H6.43834V4.65393V4.65393ZM7.605 8.99424C8.12422 9.01977 8.62982 9.07797 9.11236 9.16635C9.21688 8.67606 9.28821 8.14412 9.31773 7.58333H7.605V8.99424ZM6.43834 8.99216V7.58333H4.68161C4.71114 8.14412 4.78247 8.67606 4.88699 9.16635C5.38313 9.07548 5.90366 9.01651 6.43834 8.99216ZM7.605 10.1625V12.0503C8.05853 11.7507 8.47697 11.1297 8.78847 10.2938C8.40943 10.2291 8.01286 10.1847 7.605 10.1625ZM6.43834 10.1602C6.01497 10.1815 5.60351 10.2268 5.21088 10.2938C5.53243 11.1566 5.96792 11.7906 6.43834 12.0783V10.1602ZM7.605 3.4836C7.96498 3.464 8.31616 3.42709 8.65426 3.37423C8.36137 2.70579 7.99624 2.20812 7.605 1.94969V3.4836ZM6.43834 3.48591V1.9217C6.03051 2.17115 5.64893 2.6808 5.34509 3.37423C5.69693 3.42923 6.06295 3.46698 6.43834 3.48591ZM1.78172 6.41666H3.51327C3.54963 5.64077 3.65808 4.90168 3.82853 4.22633C3.46512 4.11704 3.12217 3.98863 2.80494 3.84249C2.25265 4.57504 1.88782 5.45686 1.78172 6.41666ZM1.78172 7.58333C1.87535 8.43035 2.17048 9.21663 2.61812 9.89319C2.96427 9.72037 3.34448 9.56977 3.75123 9.44339C3.6251 8.85991 3.54379 8.23458 3.51327 7.58333H1.78172ZM12.2176 6.41666C12.1115 5.45686 11.7467 4.57504 11.1944 3.84249C10.8772 3.98863 10.5342 4.11704 10.1708 4.22633C10.3413 4.90168 10.4497 5.64077 10.4861 6.41666H12.2176ZM12.2176 7.58333H10.4861C10.4556 8.23458 10.3743 8.85991 10.2481 9.44339C10.6548 9.56977 11.0351 9.72037 11.3812 9.89319C11.8289 9.21663 12.124 8.43035 12.2176 7.58333ZM4.55102 11.6452C4.36834 11.3202 4.2063 10.9584 4.06745 10.5667C3.8305 10.6413 3.60571 10.7251 3.39528 10.8172C3.73978 11.1426 4.12832 11.4219 4.55102 11.6452ZM9.44833 11.6452C9.87102 11.4219 10.2596 11.1426 10.6041 10.8172C10.3936 10.7251 10.1688 10.6413 9.93189 10.5667C9.79304 10.9584 9.631 11.3202 9.44833 11.6452ZM4.55102 2.35482C4.237 2.52069 3.94183 2.71748 3.66956 2.94112C3.83509 3.00438 4.00806 3.06283 4.18758 3.11619C4.29725 2.84484 4.41873 2.59019 4.55102 2.35482ZM9.44833 2.35482C9.58062 2.59019 9.70209 2.84484 9.81177 3.11618C9.99127 3.06283 10.1642 3.00437 10.3298 2.94111C10.0575 2.71747 9.76235 2.52069 9.44833 2.35482ZM6.99967 13.4167C3.45585 13.4167 0.583008 10.5438 0.583008 6.99999C0.583008 3.45617 3.45585 0.583328 6.99967 0.583328C10.5435 0.583328 13.4163 3.45617 13.4163 6.99999C13.4163 10.5438 10.5435 13.4167 6.99967 13.4167Z" fill="#0062FF"/>
+                                        </svg>
+                                        Dribble
+                                    </td>
+                                    <td class="align-middle">3 Yrs</td>
+                                    <td class="align-middle">$205/Mth</td>
+                                    <td class="align-middle">27 May "19</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                        <div class="applicantListPhoto"></div>
+                                    </th>
+                                    <td class="align-middle">Brett Drake</td>
+                                    <td class="align-middle blueText">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.605 4.65184V6.41666H9.31773C9.28125 5.72365 9.18092 5.0747 9.03302 4.49396C8.5745 4.57438 8.09583 4.62771 7.605 4.65184ZM6.43834 4.65393C5.93209 4.63087 5.43852 4.57678 4.96633 4.49396C4.81843 5.0747 4.7181 5.72365 4.68161 6.41666H6.43834V4.65393V4.65393ZM7.605 8.99424C8.12422 9.01977 8.62982 9.07797 9.11236 9.16635C9.21688 8.67606 9.28821 8.14412 9.31773 7.58333H7.605V8.99424ZM6.43834 8.99216V7.58333H4.68161C4.71114 8.14412 4.78247 8.67606 4.88699 9.16635C5.38313 9.07548 5.90366 9.01651 6.43834 8.99216ZM7.605 10.1625V12.0503C8.05853 11.7507 8.47697 11.1297 8.78847 10.2938C8.40943 10.2291 8.01286 10.1847 7.605 10.1625ZM6.43834 10.1602C6.01497 10.1815 5.60351 10.2268 5.21088 10.2938C5.53243 11.1566 5.96792 11.7906 6.43834 12.0783V10.1602ZM7.605 3.4836C7.96498 3.464 8.31616 3.42709 8.65426 3.37423C8.36137 2.70579 7.99624 2.20812 7.605 1.94969V3.4836ZM6.43834 3.48591V1.9217C6.03051 2.17115 5.64893 2.6808 5.34509 3.37423C5.69693 3.42923 6.06295 3.46698 6.43834 3.48591ZM1.78172 6.41666H3.51327C3.54963 5.64077 3.65808 4.90168 3.82853 4.22633C3.46512 4.11704 3.12217 3.98863 2.80494 3.84249C2.25265 4.57504 1.88782 5.45686 1.78172 6.41666ZM1.78172 7.58333C1.87535 8.43035 2.17048 9.21663 2.61812 9.89319C2.96427 9.72037 3.34448 9.56977 3.75123 9.44339C3.6251 8.85991 3.54379 8.23458 3.51327 7.58333H1.78172ZM12.2176 6.41666C12.1115 5.45686 11.7467 4.57504 11.1944 3.84249C10.8772 3.98863 10.5342 4.11704 10.1708 4.22633C10.3413 4.90168 10.4497 5.64077 10.4861 6.41666H12.2176ZM12.2176 7.58333H10.4861C10.4556 8.23458 10.3743 8.85991 10.2481 9.44339C10.6548 9.56977 11.0351 9.72037 11.3812 9.89319C11.8289 9.21663 12.124 8.43035 12.2176 7.58333ZM4.55102 11.6452C4.36834 11.3202 4.2063 10.9584 4.06745 10.5667C3.8305 10.6413 3.60571 10.7251 3.39528 10.8172C3.73978 11.1426 4.12832 11.4219 4.55102 11.6452ZM9.44833 11.6452C9.87102 11.4219 10.2596 11.1426 10.6041 10.8172C10.3936 10.7251 10.1688 10.6413 9.93189 10.5667C9.79304 10.9584 9.631 11.3202 9.44833 11.6452ZM4.55102 2.35482C4.237 2.52069 3.94183 2.71748 3.66956 2.94112C3.83509 3.00438 4.00806 3.06283 4.18758 3.11619C4.29725 2.84484 4.41873 2.59019 4.55102 2.35482ZM9.44833 2.35482C9.58062 2.59019 9.70209 2.84484 9.81177 3.11618C9.99127 3.06283 10.1642 3.00437 10.3298 2.94111C10.0575 2.71747 9.76235 2.52069 9.44833 2.35482ZM6.99967 13.4167C3.45585 13.4167 0.583008 10.5438 0.583008 6.99999C0.583008 3.45617 3.45585 0.583328 6.99967 0.583328C10.5435 0.583328 13.4163 3.45617 13.4163 6.99999C13.4163 10.5438 10.5435 13.4167 6.99967 13.4167Z" fill="#0062FF"/>
+                                        </svg>
+                                        Dribble
+                                    </td>
+                                    <td class="align-middle">3 Yrs</td>
+                                    <td class="align-middle">$205/Mth</td>
+                                    <td class="align-middle">27 May "19</td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row">
+                                        <div class="applicantListPhoto"></div>
+                                    </th>
+                                    <td class="align-middle">Brett Drake</td>
+                                    <td class="align-middle blueText">
+                                        <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M7.605 4.65184V6.41666H9.31773C9.28125 5.72365 9.18092 5.0747 9.03302 4.49396C8.5745 4.57438 8.09583 4.62771 7.605 4.65184ZM6.43834 4.65393C5.93209 4.63087 5.43852 4.57678 4.96633 4.49396C4.81843 5.0747 4.7181 5.72365 4.68161 6.41666H6.43834V4.65393V4.65393ZM7.605 8.99424C8.12422 9.01977 8.62982 9.07797 9.11236 9.16635C9.21688 8.67606 9.28821 8.14412 9.31773 7.58333H7.605V8.99424ZM6.43834 8.99216V7.58333H4.68161C4.71114 8.14412 4.78247 8.67606 4.88699 9.16635C5.38313 9.07548 5.90366 9.01651 6.43834 8.99216ZM7.605 10.1625V12.0503C8.05853 11.7507 8.47697 11.1297 8.78847 10.2938C8.40943 10.2291 8.01286 10.1847 7.605 10.1625ZM6.43834 10.1602C6.01497 10.1815 5.60351 10.2268 5.21088 10.2938C5.53243 11.1566 5.96792 11.7906 6.43834 12.0783V10.1602ZM7.605 3.4836C7.96498 3.464 8.31616 3.42709 8.65426 3.37423C8.36137 2.70579 7.99624 2.20812 7.605 1.94969V3.4836ZM6.43834 3.48591V1.9217C6.03051 2.17115 5.64893 2.6808 5.34509 3.37423C5.69693 3.42923 6.06295 3.46698 6.43834 3.48591ZM1.78172 6.41666H3.51327C3.54963 5.64077 3.65808 4.90168 3.82853 4.22633C3.46512 4.11704 3.12217 3.98863 2.80494 3.84249C2.25265 4.57504 1.88782 5.45686 1.78172 6.41666ZM1.78172 7.58333C1.87535 8.43035 2.17048 9.21663 2.61812 9.89319C2.96427 9.72037 3.34448 9.56977 3.75123 9.44339C3.6251 8.85991 3.54379 8.23458 3.51327 7.58333H1.78172ZM12.2176 6.41666C12.1115 5.45686 11.7467 4.57504 11.1944 3.84249C10.8772 3.98863 10.5342 4.11704 10.1708 4.22633C10.3413 4.90168 10.4497 5.64077 10.4861 6.41666H12.2176ZM12.2176 7.58333H10.4861C10.4556 8.23458 10.3743 8.85991 10.2481 9.44339C10.6548 9.56977 11.0351 9.72037 11.3812 9.89319C11.8289 9.21663 12.124 8.43035 12.2176 7.58333ZM4.55102 11.6452C4.36834 11.3202 4.2063 10.9584 4.06745 10.5667C3.8305 10.6413 3.60571 10.7251 3.39528 10.8172C3.73978 11.1426 4.12832 11.4219 4.55102 11.6452ZM9.44833 11.6452C9.87102 11.4219 10.2596 11.1426 10.6041 10.8172C10.3936 10.7251 10.1688 10.6413 9.93189 10.5667C9.79304 10.9584 9.631 11.3202 9.44833 11.6452ZM4.55102 2.35482C4.237 2.52069 3.94183 2.71748 3.66956 2.94112C3.83509 3.00438 4.00806 3.06283 4.18758 3.11619C4.29725 2.84484 4.41873 2.59019 4.55102 2.35482ZM9.44833 2.35482C9.58062 2.59019 9.70209 2.84484 9.81177 3.11618C9.99127 3.06283 10.1642 3.00437 10.3298 2.94111C10.0575 2.71747 9.76235 2.52069 9.44833 2.35482ZM6.99967 13.4167C3.45585 13.4167 0.583008 10.5438 0.583008 6.99999C0.583008 3.45617 3.45585 0.583328 6.99967 0.583328C10.5435 0.583328 13.4163 3.45617 13.4163 6.99999C13.4163 10.5438 10.5435 13.4167 6.99967 13.4167Z" fill="#0062FF"/>
+                                        </svg>
+                                        Dribble
+                                    </td>
+                                    <td class="align-middle">3 Yrs</td>
+                                    <td class="align-middle">$205/Mth</td>
+                                    <td class="align-middle">27 May "19</td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="applicantListMobileCard">
+                            <div class="applicantListMobileCardItem">
+                                <div class="applicantListMobileCardTop">
+                                    <div class="applicantListPhoto"></div>
+                                    <div class="applicantListMobileCardTopInfo">
+                                        <span class="name">Brett Drake</span>
+                                        <span class="date">27 May "22</span>
+                                    </div>
+                                    <div class="applicantListMobileCardTopRight">
+                                        <span>Dribble</span>
+                                    </div>
+                                </div>
+                                <div class="applicantListMobileCardBottom">
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        EXP 8 YRS - 
+                                    </div>
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        SALARY $150/Mth
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="applicantListMobileCardItem">
+                                <div class="applicantListMobileCardTop">
+                                    <div class="applicantListPhoto"></div>
+                                    <div class="applicantListMobileCardTopInfo">
+                                        <span class="name">Brett Drake</span>
+                                        <span class="date">27 May "22</span>
+                                    </div>
+                                    <div class="applicantListMobileCardTopRight">
+                                        <span>Behance</span>
+                                    </div>
+                                </div>
+                                <div class="applicantListMobileCardBottom">
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        EXP 8 YRS - 
+                                    </div>
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        SALARY $150/Mth
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="applicantListMobileCardItem">
+                                <div class="applicantListMobileCardTop">
+                                    <div class="applicantListPhoto"></div>
+                                    <div class="applicantListMobileCardTopInfo">
+                                        <span class="name">Brett Drake</span>
+                                        <span class="date">27 May "22</span>
+                                    </div>
+                                    <div class="applicantListMobileCardTopRight">
+                                        <span>Github</span>
+                                    </div>
+                                </div>
+                                <div class="applicantListMobileCardBottom">
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        EXP 8 YRS - 
+                                    </div>
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        SALARY $150/Mth
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="applicantListMobileCardItem">
+                                <div class="applicantListMobileCardTop">
+                                    <div class="applicantListPhoto"></div>
+                                    <div class="applicantListMobileCardTopInfo">
+                                        <span class="name">Brett Drake</span>
+                                        <span class="date">27 May "22</span>
+                                    </div>
+                                    <div class="applicantListMobileCardTopRight">
+                                        <span>Dribble</span>
+                                    </div>
+                                </div>
+                                <div class="applicantListMobileCardBottom">
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        EXP 8 YRS - 
+                                    </div>
+                                    <div class="applicantListMobileCardBottomInfos">
+                                        SALARY $150/Mth
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <div class="employeeSkilsScope">
+                        <div class="employeeSkilsTitle">Employee Skills</div>
+                        <div class="table-responsive tableDesktop">
+                            <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="table-responsive tableMobile">
+                            <table class="table">
+                                <tbody>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto">+2</div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto">+4</div>
+                                    </td>
+                                  </tr>
+                                  <tr>
+                                    <th scope="row" class="align-middle" style="width: 10%;">
+                                        <div class="employeeSkilsPhoto d-block"></div>
+                                    </th>
+                                    <td class="align-middle" style="width: 40%;">Sketch</td>
+                                    <td class="align-middle text-end" style="width: 50%">
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto"></div>
+                                        <div class="employeeSkilsPhoto">+7</div>
+                                    </td>
+                                  </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="jobLeaderboardScope">
+                        <div class="jobLeaderboardTitle">Job Match Leaderboard</div>
+                        <div class="row">
+                            <div class="col-xl-1 align-middle">
+                                <div class="jobLeaderboardPhoto d-block"></div>
+                            </div>
+                            <div class="col-xl-8 align-middle">
+                                <div class="jobLeaderboardRow">
+                                    <span class="jobLeaderboardName">Roxie Ward</span>
+                                    <span class="jobLeaderboardJob">UI Designer</span>
+                                    <span class="jobLeaderboardPoint">7/8</span>
+                                </div>
+                                <div class="jobLeaderboardRow">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-auto">
+                                <span class="badge bg-success align-middle">Great Talent</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 align-middle">
+                                <div class="jobLeaderboardPhoto d-block"></div>
+                            </div>
+                            <div class="col-xl-8 align-middle">
+                                <div class="jobLeaderboardRow">
+                                    <span class="jobLeaderboardName">Roxie Ward</span>
+                                    <span class="jobLeaderboardJob">UI Designer</span>
+                                    <span class="jobLeaderboardPoint">7/8</span>
+                                </div>
+                                <div class="jobLeaderboardRow">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-auto">
+                                <span class="badge bg-success align-middle">Great Talent</span>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-xl-1 align-middle">
+                                <div class="jobLeaderboardPhoto d-block"></div>
+                            </div>
+                            <div class="col-xl-8 align-middle">
+                                <div class="jobLeaderboardRow">
+                                    <span class="jobLeaderboardName">Roxie Ward</span>
+                                    <span class="jobLeaderboardJob">UI Designer</span>
+                                    <span class="jobLeaderboardPoint">7/8</span>
+                                </div>
+                                <div class="jobLeaderboardRow">
+                                    <div class="progress">
+                                        <div class="progress-bar" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col mt-auto">
+                                <span class="badge bg-success align-middle">Great Talent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-3">
+                    <div class="profileSummaryScope">
+                        <div class="profileSummaryCover">
+                            <div class="profileSummaryPhoto"></div>
+                        </div>
+                        <div class="profileSummaryMain text-center">
+                            <span class="profileSummaryTitle d-block">Senior Product Designer</span>
+                            <span class="profileSummarySubTitle d-block mt-2">Mailchimp <span class="profileSummaryDot"></span>
+                                <span class="profileSummaryCountry">California, US 
+                                    <svg width="14" height="14" class="align-top ms-1" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.99967 13.6667C10.6816 13.6667 13.6663 10.6819 13.6663 7C13.6663 3.3181 10.6816 0.333336 6.99967 0.333336C3.31778 0.333336 0.333008 3.3181 0.333008 7C0.333008 10.6819 3.31778 13.6667 6.99967 13.6667ZM6.99967 12.4545C3.98721 12.4545 1.54513 10.0125 1.54513 7C1.54513 3.98754 3.98721 1.54546 6.99967 1.54546C10.0121 1.54546 12.4542 3.98754 12.4542 7C12.4542 10.0125 10.0121 12.4545 6.99967 12.4545ZM10.1459 4.62036C10.3039 4.14657 9.85311 3.69581 9.37932 3.85375L5.52237 5.13939C5.3414 5.19972 5.19939 5.34173 5.13907 5.5227L3.85342 9.37965C3.69549 9.85344 4.14624 10.3042 4.62003 10.1463L8.47698 8.86061C8.65795 8.80029 8.79996 8.65828 8.86028 8.4773L10.1459 4.62036ZM5.38664 8.61303L5.97307 6.85376L7.15964 8.02204L5.38664 8.61303ZM8.01925 7.16735L6.81844 5.98506L8.61271 5.38697L8.01925 7.16735Z" fill="#50B5FF"/>
+                                    </svg>
+                                </span> 
+                            </span>
+                            <div class="profileSummaryAllFriends d-inline-block">
+                                <span class="profileSummaryAllFriendsItem"></span>
+                                <span class="profileSummaryAllFriendsItem"></span>
+                                <span class="profileSummaryAllFriendsItem"></span>
+                                <span class="profileSummaryAllFriendsItem"></span>
+                                <span class="profileSummaryAllFriendsItem">+2</span>
+                            </div>
+                            <div class="profileSummaryAllFriendsTextBlock d-inline-block ms-1">
+                                <span class="profileSummaryAllFriendsText">6 Friends Work Here</span>
+                            </div>
+                            <div class="profileSummaryShareSavedScope mt-4">
+                                <svg width="36" class="me-2" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="9.5" stroke="#E2E2EA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M14.5477 8.87302H22.2857C24.039 8.87302 25.4603 10.2943 25.4603 12.0476V24.8433C25.4603 25.7199 24.7497 26.4306 23.873 26.4306C23.5126 26.4306 23.1628 26.3079 22.8814 26.0827L18.4167 22.5105L13.952 26.0827C13.2675 26.6304 12.2686 26.5194 11.7209 25.8349C11.4957 25.5535 11.373 25.2037 11.373 24.8433V12.0476C11.373 10.2943 12.7944 8.87302 14.5477 8.87302ZM14.5477 10.4603C13.671 10.4603 12.9603 11.171 12.9603 12.0476V24.8433L17.425 21.271C18.0048 20.8072 18.8286 20.8072 19.4084 21.271L23.873 24.8433V12.0476C23.873 11.171 23.1624 10.4603 22.2857 10.4603H14.5477Z" fill="#92929D"/>
+                                </svg>
+                                <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <rect x="0.5" y="0.5" width="35" height="35" rx="9.5" stroke="#E2E2EA"/>
+                                    <path fill-rule="evenodd" clip-rule="evenodd" d="M20.5003 12.1667C20.5003 10.3257 21.9927 8.83333 23.8337 8.83333C25.6746 8.83333 27.167 10.3257 27.167 12.1667C27.167 14.0076 25.6746 15.5 23.8337 15.5C22.6958 15.5 21.6912 14.9299 21.0897 14.0598L15.307 16.8787C15.4322 17.2291 15.5003 17.6066 15.5003 18C15.5003 18.3663 15.4413 18.7187 15.3321 19.0484L21.0817 21.9519C21.6822 21.0752 22.6907 20.5 23.8337 20.5C25.6746 20.5 27.167 21.9924 27.167 23.8333C27.167 25.6743 25.6746 27.1667 23.8337 27.1667C21.9927 27.1667 20.5003 25.6743 20.5003 23.8333C20.5003 23.7319 20.5049 23.6314 20.5137 23.5323L14.4213 20.4555C13.8278 21.0006 13.0363 21.3333 12.167 21.3333C10.326 21.3333 8.83366 19.841 8.83366 18C8.83366 16.1591 10.326 14.6667 12.167 14.6667C13.0055 14.6667 13.7717 14.9763 14.3575 15.4874L20.5154 12.4856C20.5054 12.3806 20.5003 12.2742 20.5003 12.1667ZM25.5003 12.1667C25.5003 11.2462 24.7541 10.5 23.8337 10.5C22.9132 10.5 22.167 11.2462 22.167 12.1667C22.167 13.0871 22.9132 13.8333 23.8337 13.8333C24.7541 13.8333 25.5003 13.0871 25.5003 12.1667ZM25.5003 23.8333C25.5003 22.9129 24.7541 22.1667 23.8337 22.1667C22.9132 22.1667 22.167 22.9129 22.167 23.8333C22.167 24.7538 22.9132 25.5 23.8337 25.5C24.7541 25.5 25.5003 24.7538 25.5003 23.8333ZM12.167 16.3333C13.0875 16.3333 13.8337 17.0795 13.8337 18C13.8337 18.9205 13.0875 19.6667 12.167 19.6667C11.2465 19.6667 10.5003 18.9205 10.5003 18C10.5003 17.0795 11.2465 16.3333 12.167 16.3333Z" fill="#92929D"/>
+                                </svg>   
+                            </div>
+                            <div class="profileSummaryInfoScope mt-4 d-inline-block">
+                                <div class="profileSummaryInfoItem float-start position-relative w-100 py-3">
+                                    <span class="profileSummaryInfoLeft float-start">Hours Per Week</span>
+                                    <span class="profileSummaryInfoRight float-end">80 / Hrs</span>
+                                </div>
+                                <div class="profileSummaryInfoItem float-start position-relative w-100 py-3">
+                                    <span class="profileSummaryInfoLeft float-start">Max Salary Budget</span>
+                                    <span class="profileSummaryInfoRight float-end">$250 / Hrs</span>
+                                </div>
+                                <div class="profileSummaryInfoItem float-start position-relative w-100 py-3">
+                                    <span class="profileSummaryInfoLeft float-start">Min Experience</span>
+                                    <span class="profileSummaryInfoRight float-end">2 Years Above</span>
+                                </div>
+                                <div class="profileSummaryInfoItem float-start position-relative w-100 py-3">
+                                    <span class="profileSummaryInfoLeft float-start">Experience Level</span>
+                                    <span class="profileSummaryInfoRight float-end">Senior Level</span>
+                                </div>
+                                <div class="profileSummaryInfoItem float-start position-relative w-100 py-3">
+                                    <span class="profileSummaryInfoLeft float-start">Work Started</span>
+                                    <span class="profileSummaryInfoRight float-end">15 Jun 2019</span>
+                                </div>
+                            </div>
+                            <div class="profileSummaryDocumentScope mt-4 d-inline-block w-100">
+                                <div class="profileSummaryDocumentItem position-relative w-100 float-start">
+                                    <svg width="36" height="36" class="float-start" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="36" height="36" rx="10" fill="#50B5FF" fill-opacity="0.1"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0541 14.1667L21.9167 12.8017V14.1667H23.0541ZM25.6667 15.2715V23.25C25.6667 24.9529 24.2862 26.3333 22.5833 26.3333H13.5833C11.8805 26.3333 10.5 24.9529 10.5 23.25V12.75C10.5 11.0471 11.8805 9.66666 13.5833 9.66666H20.7321C21.202 9.66666 21.6476 9.87538 21.9484 10.2364L25.2997 14.2579C25.5368 14.5425 25.6667 14.9011 25.6667 15.2715ZM24 15.8333H21.8333C20.9589 15.8333 20.25 15.1244 20.25 14.25V11.3333H13.5833C12.8009 11.3333 12.1667 11.9676 12.1667 12.75V23.25C12.1667 24.0324 12.8009 24.6667 13.5833 24.6667H22.5833C23.3657 24.6667 24 24.0324 24 23.25V15.8333ZM13.919 21H22.2476C22.387 21 22.5 21.0995 22.5 21.2222V22.4444C22.5 22.5672 22.387 22.6667 22.2476 22.6667H13.919C13.7797 22.6667 13.6667 22.5672 13.6667 22.4444V21.2222C13.6667 21.0995 13.7797 21 13.919 21Z" fill="#0062FF"/>
+                                    </svg>
+                                    <div class="profileSummaryDocumentItemName ms-2 float-start">
+                                        Overview.pdf
+                                    </div>
+                                    <div class="profileSummaryDocumentItemSize float-end">
+                                        235 Kb
+                                    </div>
+                                </div>
+                                <div class="profileSummaryDocumentItem position-relative w-100 float-start">
+                                    <svg width="36" height="36" class="float-start" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="36" height="36" rx="10" fill="#50B5FF" fill-opacity="0.1"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0541 14.1667L21.9167 12.8017V14.1667H23.0541ZM25.6667 15.2715V23.25C25.6667 24.9529 24.2862 26.3333 22.5833 26.3333H13.5833C11.8805 26.3333 10.5 24.9529 10.5 23.25V12.75C10.5 11.0471 11.8805 9.66666 13.5833 9.66666H20.7321C21.202 9.66666 21.6476 9.87538 21.9484 10.2364L25.2997 14.2579C25.5368 14.5425 25.6667 14.9011 25.6667 15.2715ZM24 15.8333H21.8333C20.9589 15.8333 20.25 15.1244 20.25 14.25V11.3333H13.5833C12.8009 11.3333 12.1667 11.9676 12.1667 12.75V23.25C12.1667 24.0324 12.8009 24.6667 13.5833 24.6667H22.5833C23.3657 24.6667 24 24.0324 24 23.25V15.8333ZM13.919 21H22.2476C22.387 21 22.5 21.0995 22.5 21.2222V22.4444C22.5 22.5672 22.387 22.6667 22.2476 22.6667H13.919C13.7797 22.6667 13.6667 22.5672 13.6667 22.4444V21.2222C13.6667 21.0995 13.7797 21 13.919 21Z" fill="#0062FF"/>
+                                    </svg>
+                                    <div class="profileSummaryDocumentItemName ms-2 float-start">
+                                        Contract Employee.pdf
+                                    </div>
+                                    <div class="profileSummaryDocumentItemSize float-end">
+                                        235 Kb
+                                    </div>
+                                </div>
+                                <div class="profileSummaryDocumentItem position-relative w-100 float-start">
+                                    <svg width="36" height="36" class="float-start" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <rect width="36" height="36" rx="10" fill="#50B5FF" fill-opacity="0.1"/>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M23.0541 14.1667L21.9167 12.8017V14.1667H23.0541ZM25.6667 15.2715V23.25C25.6667 24.9529 24.2862 26.3333 22.5833 26.3333H13.5833C11.8805 26.3333 10.5 24.9529 10.5 23.25V12.75C10.5 11.0471 11.8805 9.66666 13.5833 9.66666H20.7321C21.202 9.66666 21.6476 9.87538 21.9484 10.2364L25.2997 14.2579C25.5368 14.5425 25.6667 14.9011 25.6667 15.2715ZM24 15.8333H21.8333C20.9589 15.8333 20.25 15.1244 20.25 14.25V11.3333H13.5833C12.8009 11.3333 12.1667 11.9676 12.1667 12.75V23.25C12.1667 24.0324 12.8009 24.6667 13.5833 24.6667H22.5833C23.3657 24.6667 24 24.0324 24 23.25V15.8333ZM13.919 21H22.2476C22.387 21 22.5 21.0995 22.5 21.2222V22.4444C22.5 22.5672 22.387 22.6667 22.2476 22.6667H13.919C13.7797 22.6667 13.6667 22.5672 13.6667 22.4444V21.2222C13.6667 21.0995 13.7797 21 13.919 21Z" fill="#0062FF"/>
+                                    </svg>
+                                    <div class="profileSummaryDocumentItemName ms-2 float-start">
+                                        Benefit Details.pdf
+                                    </div>
+                                    <div class="profileSummaryDocumentItemSize float-end">
+                                        235 Kb
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="profileSummaryJobPost mt-2 text-start">
+                                <span class="profileSummaryJobTitle">Job Posted by</span>
+                                <div class="profileSummaryJobItem d-flex">
+                                    <div class="profileSummaryJobTitlePhoto"></div>
+                                    <div class="profileSummaryJobTitleInfo">
+                                        <span class="profileSummaryJobTitleName d-block">Birdie Morrison</span>
+                                        <span class="profileSummaryJobTitle">HR Specialist <span class="profileSummaryJobTitleDate"> 10 Yrs Exp</span></span>
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
